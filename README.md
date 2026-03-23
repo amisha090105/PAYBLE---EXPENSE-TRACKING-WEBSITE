@@ -1,73 +1,85 @@
-# Welcome to your Lovable project
+# Expense Tracker System
 
-## Project info
+A full-stack expense management system with authentication, transaction tracking, reminders, and real-time insights.
 
-**URL**: https://lovable.dev/projects/ddc88e7b-d03e-4c40-9dc9-af99ea1b264d
+## 🚀 Features
 
-## How can I edit this code?
+* User authentication and secure account management
+* Add, update, and track expenses and transactions
+* Real-time balance calculation and financial overview
+* Email notifications and reminders
+* Razorpay integration for payments
+* Dashboard with insights and analytics
 
-There are several ways of editing your application.
+## 🛠️ Tech Stack
 
-**Use Lovable**
+* **Frontend:** React, TypeScript, Vite, Tailwind CSS
+* **Backend:** Node.js, Express
+* **Database:** Supabase / MongoDB
+* **Payments:** Razorpay
+* **Other:** JWT Authentication, Email Services
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/ddc88e7b-d03e-4c40-9dc9-af99ea1b264d) and start prompting.
+## 📂 Project Structure
 
-Changes made via Lovable will be committed automatically to this repo.
+```id="b1"
+backend/
+  ├── routes/
+  ├── models/
+  ├── middleware/
+  ├── utils/
+  ├── server.js
 
-**Use your preferred IDE**
+frontend/
+  ├── src/
+  ├── public/
+```
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## ⚙️ Setup Instructions
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### 1. Clone repository
 
-Follow these steps:
+```id="b2"
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+```
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### 2. Backend setup
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+```id="b3"
+cd backend
+npm install
+node server.js
+```
 
-# Step 3: Install the necessary dependencies.
-npm i
+### 3. Frontend setup
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+```id="b4"
+cd frontend
+npm install
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+## 🔒 Environment Variables
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Create a `.env` file:
 
-**Use GitHub Codespaces**
+```id="b5"
+JWT_SECRET=your_secret
+SUPABASE_URL=your_url
+SUPABASE_ANON_KEY=your_key
+RAZORPAY_KEY=your_key
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 📊 Highlights
 
-## What technologies are used for this project?
+* Built modular backend APIs for authentication, transactions, and reminders
+* Designed database schemas for efficient transaction tracking
+* Integrated payment and notification systems for real-world functionality
 
-This project is built with:
+## 🚀 Future Improvements
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+* Add budgeting and spending analytics
+* Improve UI/UX
+* Deploy on cloud
 
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/ddc88e7b-d03e-4c40-9dc9-af99ea1b264d) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+---
